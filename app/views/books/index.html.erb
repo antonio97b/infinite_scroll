@@ -1,0 +1,19 @@
+<h1>Books List:</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Title</th>
+      <th>Author</th>
+      <th>Publication Date</th>
+    </tr>
+  </thead>
+  <tbody id="book-list">
+    <%= render @books %>
+  </tbody>
+</table>
+
+<div id="infinite-scrolling">
+  <%= will_paginate %>
+</div>
